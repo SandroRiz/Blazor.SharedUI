@@ -1,0 +1,16 @@
+﻿<h1>
+    @if (ShowImage)
+    {
+        <img src="./_content/Blazor.SharedUI.RCL/images/icon-192.png" style="float:right;width:50px;" />
+    }
+    @Title
+</h1>
+
+
+@code {
+    [Parameter]
+    public string Title { get; set; } = String.Empty;
+
+    [Parameter]
+    public bool ShowImage { get; set; } = false;
+}
