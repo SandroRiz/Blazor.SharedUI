@@ -62,3 +62,12 @@ a, .btn-link {
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+
+    .rcl-custom-class
+    {
+        border:1px solid green;
+        width:25%;
+        padding:20px;
+        margin-top:20px;
+        font-style:italic;
+    }

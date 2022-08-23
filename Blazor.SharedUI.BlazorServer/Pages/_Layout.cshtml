@@ -1,0 +1,34 @@
+﻿@using Microsoft.AspNetCore.Components.Web
+@namespace Blazor.SharedUI.BlazorServer.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="~/" />
+    <link rel="stylesheet" href="./_content/Blazor.SharedUI.RCL/css/bootstrap/bootstrap.min.css" />
+    <link href="./_content/Blazor.SharedUI.RCL/css/app.css" rel="stylesheet" />
+    <link href="Blazor.SharedUI.BlazorServer.styles.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="./_content/Blazor.SharedUI.RCL/favicon.ico">
+    <component type="typeof(HeadOutlet)" render-mode="ServerPrerendered" />
+    <title>Blazor.SharedUI.SERVER</title>
+</head>
+<body>
+    @RenderBody()
+
+    <div id="blazor-error-ui">
+        <environment include="Staging,Production">
+            An error has occurred. This application may no longer respond until reloaded.
+        </environment>
+        <environment include="Development">
+            An unhandled exception has occurred. See browser dev tools for details.
+        </environment>
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+
+    <script src="_framework/blazor.server.js"></script>
+</body>
+</html>
