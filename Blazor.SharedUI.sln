@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32811.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor.SharedUI.WASM", "Blazor.SharedUI.WASM\Blazor.SharedUI.WASM.csproj", "{4C1686E6-7C53-41D1-83B9-8B601705DDFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor.SharedUI.WASM", "Blazor.SharedUI.WASM\Blazor.SharedUI.WASM.csproj", "{4C1686E6-7C53-41D1-83B9-8B601705DDFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor.SharedUI.MAUI", "Blazor.SharedUI.MAUI\Blazor.SharedUI.MAUI.csproj", "{607CCF05-B9FD-4A9A-A4C4-CC76133B8E75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor.SharedUI.MAUI", "Blazor.SharedUI.MAUI\Blazor.SharedUI.MAUI.csproj", "{607CCF05-B9FD-4A9A-A4C4-CC76133B8E75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor.SharedUI.RCL", "Blazor.SharedUI.RCL\Blazor.SharedUI.RCL.csproj", "{0C0B1650-4E5E-4FAD-BBC8-F74062224744}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor.SharedUI.RCL", "Blazor.SharedUI.RCL\Blazor.SharedUI.RCL.csproj", "{0C0B1650-4E5E-4FAD-BBC8-F74062224744}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor.SharedUI.Shared", "Blazor.SharedUI.Shared\Blazor.SharedUI.Shared.csproj", "{023CA17C-97E8-4B8B-AD75-426B6FCB0657}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{0C0B1650-4E5E-4FAD-BBC8-F74062224744}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C0B1650-4E5E-4FAD-BBC8-F74062224744}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C0B1650-4E5E-4FAD-BBC8-F74062224744}.Release|Any CPU.Build.0 = Release|Any CPU
+		{023CA17C-97E8-4B8B-AD75-426B6FCB0657}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{023CA17C-97E8-4B8B-AD75-426B6FCB0657}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{023CA17C-97E8-4B8B-AD75-426B6FCB0657}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{023CA17C-97E8-4B8B-AD75-426B6FCB0657}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

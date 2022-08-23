@@ -1,10 +1,10 @@
-namespace Blazor.SharedUI.MAUI.Data
+namespace Blazor.SharedUI.Shared
 {
     public class WeatherForecastService
     {
         private static readonly string[] Summaries = new[]
         {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+        "FreddoBecco", "Freddo", "Fresco", "CosìCosì", "Calduccio",  "Caldo", "Afa", "Bollente"
     };
 
         public Task<WeatherForecast[]> GetForecastAsync(DateTime startDate)

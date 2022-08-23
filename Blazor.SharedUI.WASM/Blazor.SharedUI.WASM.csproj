@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Blazor.SharedUI.RCL\Blazor.SharedUI.RCL.csproj" />
+    <ProjectReference Include="..\Blazor.SharedUI.Shared\Blazor.SharedUI.Shared.csproj" />
   </ItemGroup>
 
 </Project>

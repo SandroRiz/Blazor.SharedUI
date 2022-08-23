@@ -1,4 +1,4 @@
-﻿using Blazor.SharedUI.MAUI.Data;
+﻿using Blazor.SharedUI.Shared;
 using Microsoft.AspNetCore.Components.WebView.Maui;
 
 namespace Blazor.SharedUI.MAUI
