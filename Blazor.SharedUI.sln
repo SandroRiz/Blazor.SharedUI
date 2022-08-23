@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor.SharedUI.MAUI", "Bla
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor.SharedUI.RCL", "Blazor.SharedUI.RCL\Blazor.SharedUI.RCL.csproj", "{0C0B1650-4E5E-4FAD-BBC8-F74062224744}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor.SharedUI.Shared", "Blazor.SharedUI.Shared\Blazor.SharedUI.Shared.csproj", "{023CA17C-97E8-4B8B-AD75-426B6FCB0657}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor.SharedUI.Shared", "Blazor.SharedUI.Shared\Blazor.SharedUI.Shared.csproj", "{023CA17C-97E8-4B8B-AD75-426B6FCB0657}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
