@@ -13,6 +13,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor.SharedUI.Shared", "B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor.SharedUI.BlazorServer", "Blazor.SharedUI.BlazorServer\Blazor.SharedUI.BlazorServer.csproj", "{55E247FD-3F90-4649-A0E1-1EAED42514CE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{54B3F62A-F1BC-455F-BEAD-831A236857E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{CF3B7E28-4651-468F-928E-4C850CEDD7B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MAUI", "MAUI", "{48A0909F-9639-4E0D-BA1F-FFD6A98BF36C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +50,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4C1686E6-7C53-41D1-83B9-8B601705DDFF} = {54B3F62A-F1BC-455F-BEAD-831A236857E2}
+		{607CCF05-B9FD-4A9A-A4C4-CC76133B8E75} = {48A0909F-9639-4E0D-BA1F-FFD6A98BF36C}
+		{0C0B1650-4E5E-4FAD-BBC8-F74062224744} = {CF3B7E28-4651-468F-928E-4C850CEDD7B5}
+		{023CA17C-97E8-4B8B-AD75-426B6FCB0657} = {CF3B7E28-4651-468F-928E-4C850CEDD7B5}
+		{55E247FD-3F90-4649-A0E1-1EAED42514CE} = {54B3F62A-F1BC-455F-BEAD-831A236857E2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A9261611-125D-4183-9E45-9453AF39A449}

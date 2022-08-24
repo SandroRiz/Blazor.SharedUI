@@ -1,4 +1,5 @@
-﻿using Blazor.SharedUI.Shared;
+﻿using Blazor.SharedUI.MAUI.Services;
+using Blazor.SharedUI.Shared;
 using Microsoft.AspNetCore.Components.WebView.Maui;
 
 namespace Blazor.SharedUI.MAUI
@@ -19,9 +20,8 @@ namespace Blazor.SharedUI.MAUI
 #if DEBUG
 		builder.Services.AddBlazorWebViewDeveloperTools();
 #endif
-
             builder.Services.AddSingleton<WeatherForecastService>();
-
+            builder.Services.AddSingleton<IPlatformService, PlatformService>();
             return builder.Build();
         }
     }
