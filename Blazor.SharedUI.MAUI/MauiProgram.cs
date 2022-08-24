@@ -21,6 +21,7 @@ namespace Blazor.SharedUI.MAUI
 		builder.Services.AddBlazorWebViewDeveloperTools();
 #endif
             builder.Services.AddSingleton<WeatherForecastService>();
+            builder.Services.AddSingleton(sp => new HttpClient { BaseAddress = new Uri("https://localhost:44369") });
             builder.Services.AddSingleton<IPlatformService, PlatformService>();
             return builder.Build();
         }

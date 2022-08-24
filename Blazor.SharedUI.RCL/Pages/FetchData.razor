@@ -14,7 +14,7 @@
 }
 else
 {
-    <h3>Forecasts by JSON</h3>
+    <h3>Forecasts by remote web API</h3>
     <table class="table">
         <thead>
             <tr>
@@ -37,38 +37,19 @@ else
         </tbody>
     </table>
 
-    <h3>Forecasts by Service</h3>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Date</th>
-                <th>Temp. (C)</th>
-                <th>Temp. (F)</th>
-                <th>Summary</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var forecast in forecasts2)
-            {
-                <tr>
-                    <td>@forecast.Date.ToShortDateString()</td>
-                    <td>@forecast.TemperatureC</td>
-                    <td>@forecast.TemperatureF</td>
-                    <td>@forecast.Summary</td>
-                </tr>
-            }
-        </tbody>
-    </table>
+   
 }
 
 @code {
     private WeatherForecast[]? forecasts;
-    private WeatherForecast[]? forecasts2;
+
 
     protected override async Task OnInitializedAsync()
     {
-        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("./_content/Blazor.SharedUI.RCL/sample-data/weather.json");
-        forecasts2 = await WeatherForecastService.GetForecastAsync(DateTime.Now);
+        //forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("./_content/Blazor.SharedUI.RCL/sample-data/weather.json");
+        //forecasts2 = await WeatherForecastService.GetForecastAsync(DateTime.Now);
+
+        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("/weatherforecast");
     }
 
     
