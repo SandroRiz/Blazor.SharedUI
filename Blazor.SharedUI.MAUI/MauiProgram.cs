@@ -18,10 +18,15 @@ namespace Blazor.SharedUI.MAUI
 
             builder.Services.AddMauiBlazorWebView();
 #if DEBUG
-		builder.Services.AddBlazorWebViewDeveloperTools();
+            builder.Services.AddBlazorWebViewDeveloperTools();
 #endif
             builder.Services.AddSingleton<WeatherForecastService>();
-            builder.Services.AddSingleton(sp => new HttpClient { BaseAddress = new Uri("https://localhost:44369") });
+
+#if ANDROID
+            builder.Services.AddSingleton(sp => new HttpClient { BaseAddress = new Uri("http://10.0.2.2:5211") });
+#else
+            builder.Services.AddSingleton(sp => new HttpClient { BaseAddress = new Uri("https://localhost:7211") });
+#endif
             builder.Services.AddSingleton<IPlatformService, PlatformService>();
             return builder.Build();
         }

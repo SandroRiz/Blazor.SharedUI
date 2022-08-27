@@ -3,7 +3,11 @@ using Android.Runtime;
 
 namespace Blazor.SharedUI.MAUI
 {
-    [Application]
+#if DEBUG
+    [Application(AllowBackup = false, Debuggable = true, UsesCleartextTraffic = true)]
+#else                                       
+    [Application]                              
+#endif
     public class MainApplication : MauiApplication
     {
         public MainApplication(IntPtr handle, JniHandleOwnership ownership)
