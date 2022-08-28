@@ -9,5 +9,7 @@ namespace Blazor.SharedUI.Shared
     public interface IPlatformService
     {
         string GetPlatformInfo();
+
+        bool IsWeb();
     }
 }

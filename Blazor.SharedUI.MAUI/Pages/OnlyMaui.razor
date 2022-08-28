@@ -1,0 +1,41 @@
+﻿@page "/onlyapp"
+
+<MyPageTitle Title="Only APP" />
+
+<p>This Page exists only in the MAUI version</p>
+
+<p>@((MarkupString)DisplayDeviceLabel)</p>
+
+
+@code
+{
+    private string DisplayDeviceLabel = "";
+
+    protected override void OnInitialized()
+    {
+        ReadDeviceInfo();
+    }
+
+    private void ReadDeviceInfo()
+    {
+        System.Text.StringBuilder sb = new System.Text.StringBuilder();
+
+        sb.AppendLine($"Model: {DeviceInfo.Current.Model}<br/>");
+        sb.AppendLine($"Manufacturer: {DeviceInfo.Current.Manufacturer}<br/>");
+        sb.AppendLine($"Name: {DeviceInfo.Name}<br/>");
+        sb.AppendLine($"OS Version: {DeviceInfo.VersionString}<br/>");
+        sb.AppendLine($"Idiom: {DeviceInfo.Current.Idiom}<br/>");
+        sb.AppendLine($"Platform: {DeviceInfo.Current.Platform}<br/>");
+
+        bool isVirtual = DeviceInfo.Current.DeviceType switch
+        {
+            DeviceType.Physical => false,
+            DeviceType.Virtual => true,
+            _ => false
+        };
+
+        sb.AppendLine($"Virtual device? {isVirtual}");
+
+        DisplayDeviceLabel = sb.ToString();
+    }
+}

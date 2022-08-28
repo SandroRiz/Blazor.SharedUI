@@ -9,4 +9,9 @@ public class PlatformService : IPlatformService
     {
         return "Blazor WASM";
     }
+
+    public bool IsWeb()
+    {
+        return true;
+    }
 }

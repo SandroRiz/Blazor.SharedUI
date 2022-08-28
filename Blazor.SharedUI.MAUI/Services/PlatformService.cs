@@ -9,4 +9,9 @@ public class PlatformService : IPlatformService
     {
         return DeviceInfo.Current.Platform.ToString();
     }
+
+    public bool IsWeb()
+    {
+        return false;
+    }
 }
